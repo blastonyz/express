@@ -1,0 +1,29 @@
+[
+	{
+		"id": 1,
+		"title": "Taladro Makita",
+		"description": "Rotopercutor",
+		"price": 60000,
+		"thumbnail": "taladro.jpg",
+		"code": 23,
+		"stock": 10
+	},
+	{
+		"id": 2,
+		"title": "Lijadora Orbital",
+		"description": "5 velocidades",
+		"price": 35000,
+		"thumbnail": "lijadora.jpg",
+		"code": 301,
+		"stock": 10
+	},
+	{
+		"id": 3,
+		"title": "Compresor Daewo",
+		"description": "1/2hp",
+		"price": 55000,
+		"thumbnail": "compresor.jpg",
+		"code": 375,
+		"stock": 77
+	}
+]
