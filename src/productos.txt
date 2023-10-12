@@ -25,5 +25,68 @@
 		"thumbnail": "compresor.jpg",
 		"code": 375,
 		"stock": 77
+	},
+	{
+		"id": 4,
+		"title": "Amoladora Stanley",
+		"description": "2 1/2",
+		"price": 52000,
+		"thumbnail": "mola.jpg",
+		"code": 221,
+		"stock": 32
+	},
+	{
+		"id": 5,
+		"title": "Caladora Marolio",
+		"description": "le da sabor a tu vida",
+		"price": 2500,
+		"thumbnail": "cala.jpg",
+		"code": 475,
+		"stock": 150
+	},
+	{
+		"id": 6,
+		"title": "Inflador ACME",
+		"description": "sin garantia",
+		"price": 1800,
+		"thumbnail": "inflador.jpg",
+		"code": 85,
+		"stock": 23
+	},
+	{
+		"id": 7,
+		"title": "Taladro p/Drywalt Bosch",
+		"description": "700w",
+		"price": 25000,
+		"thumbnail": "taladro.jpg",
+		"code": 566,
+		"stock": 65
+	},
+	{
+		"id": 8,
+		"title": "Termofusora Noderrit",
+		"description": "1500w",
+		"price": 35000,
+		"thumbnail": "fusora.jpg",
+		"code": 862,
+		"stock": 65
+	},
+	{
+		"id": 9,
+		"title": "Motosierra Truchan",
+		"description": "Z50",
+		"price": 21000,
+		"thumbnail": "moto.jpg",
+		"code": 789,
+		"stock": 25
+	},
+	{
+		"id": 10,
+		"title": "Soldadora Luqstoff",
+		"description": "2500w",
+		"price": 95000,
+		"thumbnail": "solda.jpg",
+		"code": 654,
+		"stock": 68
 	}
 ]

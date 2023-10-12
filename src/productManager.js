@@ -14,8 +14,9 @@ class ProductManager{
         }else{
             try {                           
                     const listJSON = await fs.promises.readFile(this.path,'utf-8');
-                    const list = JSON.parse(listJSON);
+                    const list = JSON.parse(listJSON);                    
                     console.log('Lista de productos:',list);
+                    return list;
             }catch (error) {
                 console.error(`Ocurrio un error: ${error.message}`)
         }
@@ -24,13 +25,13 @@ class ProductManager{
 
  async addProduct(title,description,price,thumbnail,code,stock){
         if (!title||!description||!price||!thumbnail||!code||!stock) {
-            console.warn("Todos los campos son requeridos")
-            return;
+          return  console.warn("Todos los campos son requeridos");
+            
              }
              const validCode = this.products.find((p)=> p.code === code)
              if (validCode) {
-                console.log(`Ya existe este codigo ${code} de producto`)
-                return;
+                return console.log(`Ya existe este codigo ${code} de producto`);
+                
              }else{
                 const newProduct = {
                     id: this.products.length + 1,
@@ -137,7 +138,7 @@ class ProductManager{
 
 
 
-console.log("a1")
+
  const productManager = new ProductManager
 //instacia de productos
  productManager.addProduct(
@@ -149,7 +150,7 @@ console.log("a1")
     10,
 
  )
- console.log("b1")
+ 
  productManager.addProduct(
     "Lijadora Orbital",
     "5 velocidades",
@@ -166,6 +167,67 @@ console.log("a1")
     375,
     77,
  )
+ 
+ productManager.addProduct(
+   "Amoladora Stanley" ,
+    "2 1/2",
+    52000,
+    "mola.jpg",
+    221,
+    32,
+ )
 
- module.exports = productManager;   
- module.exports = ProductManager;
+ productManager.addProduct(
+    "Caladora Marolio" ,
+    "le da sabor a tu vida",
+    2500,
+    "cala.jpg",
+    475,
+    150 ,
+  )
+
+  productManager.addProduct(
+    "Inflador ACME" ,
+    "sin garantia",
+    1800,
+    "inflador.jpg",
+    85,
+    23,
+  ) 
+
+  productManager.addProduct(
+    "Taladro p/Drywalt Bosch" ,
+    "700w",
+    25000,
+    "taladro.jpg",
+    566,
+    65,
+  )
+
+  productManager.addProduct(
+    "Termofusora Noderrit" ,
+    "1500w",
+    35000,
+    "fusora.jpg",
+    862,
+    65,
+  )
+
+  productManager.addProduct(
+    "Motosierra Truchan" ,
+    "Z50",
+    21000,
+    "moto.jpg",
+    789,
+    25,
+  )
+
+  productManager.addProduct(
+    "Soldadora Luqstoff" ,
+    "2500w",
+    95000,
+    "solda.jpg",
+    654,
+    68,
+  )
+ module.exports = productManager;
