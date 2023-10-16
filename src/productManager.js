@@ -71,7 +71,8 @@ class ProductManager{
                         console.warn("Product not Found")
                         return
                     }
-                    return console.log("Producto Buscado:",getId)
+                    console.log("Producto Buscado:",getId)
+                    return getId;
             }catch (error) {
                 console.error(`Ocurrio un error: ${error.message}`)
         }

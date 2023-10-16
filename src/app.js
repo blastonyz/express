@@ -18,7 +18,7 @@ app.get('/products',async (req,res) => {
     res.json(product);}else{
     const filtrated = product.filter((prod) => prod.id <=limit);
     console.log("filtrao")
-    res.json(filtrated);    
+    return res.json(filtrated);    
     }   
 });
 
@@ -26,7 +26,7 @@ app.get('/products/:pId',async (req,res) => {
     const prodId = req.params.pId;
     const parseId = parseInt(prodId);
     const search =  await productManager.getProductsbyId(parseId);
-    res.send(search);
+    return res.send(search);
 });
      
 
